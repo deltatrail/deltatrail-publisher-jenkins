@@ -1,0 +1,4 @@
+<?jelly escape-by-default='true'?>
+<div>
+    Creates a post-build action to publish to Deltatrail.
+</div>

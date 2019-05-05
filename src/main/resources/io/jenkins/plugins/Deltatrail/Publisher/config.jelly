@@ -1,0 +1,9 @@
+<?jelly escape-by-default='true'?>
+<j:jelly xmlns:j="jelly:core" xmlns:st="jelly:stapler" xmlns:d="jelly:define" xmlns:l="/lib/layout" xmlns:t="/lib/hudson" xmlns:f="/lib/form">
+  <f:entry title="Entry Title" field="logTitle" description="If empty, defaults to the job name and build number.">
+    <f:textbox value="${instance.getEntryTitle()}" />
+  </f:entry>
+  <f:entry title="Entry Body" field="logText" description="Enter the content to post to Deltatrail. You can use markdown and build variables.">
+    <f:textarea value="${instance.getLogText()}" />
+  </f:entry>
+</j:jelly>
